@@ -14,7 +14,7 @@ function Homepage() {
           </p>
           <p>Find out more about our services.</p>
         </span>
-        <div class={styles.Btn}>
+        <div class={styles.Button}>
           <ButtonWhite text={"Learn More"} />
         </div>
       </div>
