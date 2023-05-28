@@ -14,6 +14,7 @@ export const Menu = styled.div`
   width: 100%;
   position: absolute;
   bottom: 0;
+  z-index: 99;
   transform: translate(0,100%);
   padding: 30px;
   display: ${(props) => props.prop === false ? "none" : "block"};

@@ -2,11 +2,11 @@
     padding: 15px 25px 15px 25px ;
     background:#fff;
     border-radius: 10px;
-    font-size: 18px;
     font-weight: 500;
     color: #1D1C1E;
     text-transform: uppercase;
     cursor: pointer;
+    text-align: center;
 }
 
 .Btn:hover{

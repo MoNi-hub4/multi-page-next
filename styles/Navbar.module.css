@@ -39,6 +39,7 @@
   transform: translate(0,100%);
   padding: 30px;
   display: none;
+  z-index: 99;
 }
 
 .menuItems {
