@@ -1,20 +1,20 @@
-.section{
+.section {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #E7816B;
+  background: #e7816b;
   padding: 50px 30px 0 30px;
 }
 
-.sectionBody{
+.sectionBody {
   position: relative;
 }
 
-.section h1{
+.section h1 {
   text-align: center;
   color: #fff;
   font-weight: 400;
@@ -22,78 +22,118 @@
   margin-bottom: 50px;
 }
 
-.section span p{
+.section span p {
   text-align: center;
   color: #fff;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-
 }
 
-.Button{
+.Button {
   position: absolute;
   bottom: -50%;
   left: 50%;
   transform: translateX(-50%);
   margin: 30px 0 30px 0;
   z-index: 99;
-
 }
 
 .phoneImage {
   position: relative;
   /* top: -10%; */
-  overflow-y: hidden;
-  overflow-x: visible;
+  overflow: hidden;
 }
 
-
-.phoneImage img{
+.phoneImage img {
   position: relative;
   /* top: -25%; */
   /* z-index: 2; */
 }
 
-.backgroundImage{
+.backgroundImage {
   position: absolute;
-  transform: translate(18%,0);
+  transform: translate(18%, 0);
   z-index: 0;
 }
 
-@media only screen and (min-width: 768px){
-  .Body{
-    padding:0 20px 20px 20px;
+@media only screen and (min-width: 768px) {
+  .Body {
+    padding: 0 20px 20px 20px;
   }
-  .section{
+  .section {
     border-radius: 20px;
     padding: 0 150px 0 150px;
   }
-  .section h1{
+  .section h1 {
     text-align: center;
-  color: #fff;
-  font-size: 42px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin:50px 0 50px 0;
-
+    color: #fff;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 50px 0 30px 0;
   }
-  .section span p{
+  .section span p {
     font-size: 19px;
   }
-  .Button{
-    font-size: 20px;
-    bottom: -30%;
+  .Button {
+    font-size: 22px;
+    bottom: -35%;
   }
-  .phoneImage{
+  .phoneImage {
     display: inline-block;
-    
   }
 
-  .phoneImage img{
-    transform: scale(1.2);
-    top: 5%;
+  .phoneImage img {
+    transform: scale(1.5);
+    top: 25%;
     /* transform-origin: 0 0; */
     /* object-fit: contain; */
+  }
+  .backgroundImage {
+    top: 8%;
+  }
+}
+
+@media only screen and (min-width: 890px) {
+  .Button {
+    bottom: -45%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    flex-direction: row;
+  }
+  .sectionBody{
+    top: -5%;
+  }
+  .phoneImage{
+    transform: scale(0.9);
+    top: 20%;
+    left: 10%;
+    overflow: visible;
+  }
+  .backgroundImage{
+    transform: scale(1.5);
+    top: 18%;
+    left: 45%;
+  }
+  .section h1{
+    margin: 0 0 40px 0;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: 1px;
+  /* line-height: 1.2; */
+  font-size: 44px;
+  }
+  .section span p{
+    text-align: left;
+    font-weight: 300;
+  }
+  .Button{
+    left: 0;
+    transform: translateX(0);
+    font-size: 18px;
   }
 }
