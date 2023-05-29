@@ -3,10 +3,12 @@ import Image from "next/image";
 import styles from "/styles/page.module.css";
 import Phone from "/assets/home/desktop/image-hero-phone.png";
 import BgPattern from "/assets/home/desktop/bg-pattern-hero-home.svg";
+import Section02 from "@/components/Section02";
 
 function Homepage() {
   return (
     <div class={styles.Body}>
+      <div class={styles.section01}>
       <div class={styles.section}>
         <div class={styles.sectionBody}>
           <h1>Award-winning custom designs and digital branding solutions</h1>
@@ -29,6 +31,8 @@ function Homepage() {
           <Image src={BgPattern} />
         </div>
       </div>
+      </div>
+      <Section02/>
     </div>
   );
 }
