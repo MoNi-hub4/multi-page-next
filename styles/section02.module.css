@@ -1,7 +1,7 @@
 .section {
   position: relative;
   overflow: hidden;
-  height: 90vh;
+  height: 110vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 60px;
@@ -55,6 +55,12 @@
   right: 0;
   z-index: -1;
 }
+.gridchild:hover{
+    background-image: linear-gradient(
+      rgba(231, 129, 107,0.4),
+      rgba(231, 129, 107,0.4)
+    );
+}
 
 .appdesign {
   position: relative;
@@ -97,4 +103,80 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    height: 70vh;
+    padding: 50px 0 0 0;
+  }
+  .webdesign::before {
+    background-image: linear-gradient(
+        rgba(51, 49, 54, 0.4),
+        rgba(51, 49, 54, 0.4)
+      ),
+      url("/home/tablet/image-web-design.jpg");
+  }
+  .appdesign::before {
+    background-image: linear-gradient(
+        rgba(51, 49, 54, 0.4),
+        rgba(51, 49, 54, 0.4)
+      ),
+      url("/home/tablet/image-app-design.jpg");
+  }
+  .graphicdesign::before {
+    background-image: linear-gradient(
+        rgba(51, 49, 54, 0.4),
+        rgba(51, 49, 54, 0.4)
+      ),
+      url("/home/tablet/image-graphic-design.jpg");
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    height: 90vh;
+    grid-template-rows: 1fr 1fr;
+  }
+  .gridchild {
+      font-size: 36px;
+      font-weight: 500;
+  }
+  .webdesign::before {
+    background-image: linear-gradient(
+        rgba(51, 49, 54, 0.4),
+        rgba(51, 49, 54, 0.4)
+      ),
+      url("/home/desktop/image-web-design-large.jpg");
+  }
+  .appdesign::before {
+    background-image: linear-gradient(
+        rgba(51, 49, 54, 0.4),
+        rgba(51, 49, 54, 0.4)
+      ),
+      url("/home/desktop/image-app-design.jpg");
+  }
+  .graphicdesign::before {
+    background-image: linear-gradient(
+        rgba(51, 49, 54, 0.4),
+        rgba(51, 49, 54, 0.4)
+      ),
+      url("/home/desktop/image-graphic-design.jpg");
+  }
+
+  .gridchild.webdesign {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-right: 30px;
+  }
+  .gridchild.appdesign {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .gridchild.graphicdesign {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
