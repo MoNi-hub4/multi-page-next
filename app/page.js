@@ -4,7 +4,6 @@ import styles from "/styles/page.module.css";
 import Phone from "/assets/home/desktop/image-hero-phone.png";
 import BgPattern from "/assets/home/desktop/bg-pattern-hero-home.svg";
 import Section02 from "@/components/Section02";
-import Card from "@/components/Card";
 import Section03 from "@/components/Section03";
 
 function Homepage() {
