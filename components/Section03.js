@@ -7,7 +7,7 @@ const Section03 = () => {
   return (
     <div className={styles.section}>
       {Data.map((data) => (
-          <Card img={data.image} title={data.title} subtitle={data.subtitle} />
+          <Card key={data.id} img={data.image} title={data.title} subtitle={data.subtitle} />
       ))}
     </div>
   );
