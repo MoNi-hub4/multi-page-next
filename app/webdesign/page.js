@@ -6,6 +6,8 @@ import Webdesign3 from "/assets/web-design/desktop/image-camp.jpg";
 import Webdesign4 from "/assets/web-design/desktop/image-express.jpg";
 import Webdesign5 from "/assets/web-design/desktop/image-photon.jpg";
 import Webdesign6 from "/assets/web-design/desktop/image-transfer.jpg";
+import Background from "/assets/web-design/desktop/bg-pattern-intro-web.svg";
+import Section02 from "@/components/Section02";
 
 function Webdesign() {
   return (
@@ -18,6 +20,7 @@ function Webdesign() {
             memorable brand experiences.
           </p>
         </span>
+        <Image src={Background}></Image>
       </div>
       <div className={styles.imageSection}>
         <div className={styles.imageContainer}>
@@ -32,49 +35,51 @@ function Webdesign() {
         <div className={styles.imageContainer}>
           <Image src={Webdesign6}></Image>
           <div className={styles.description}>
-            <p>Express</p>
+            <p>TRANSFER</p>
             <span>
-              A multi-carrier shipping website for ecommerce businesses
+              Site for low-cost money transfers and sending money within seconds
             </span>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Image src={Webdesign5}></Image>
           <div className={styles.description}>
-            <p>Express</p>
+            <p>PHOTON</p>
             <span>
-              A multi-carrier shipping website for ecommerce businesses
+              A state-of-the-art music player with high-resolution audio and DSP
+              effects
             </span>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Image src={Webdesign2}></Image>
           <div className={styles.description}>
-            <p>Express</p>
+            <p>BUILDER</p>
             <span>
-              A multi-carrier shipping website for ecommerce businesses
+              Connects users with local contractors based on their location
             </span>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Image src={Webdesign1}></Image>
           <div className={styles.description}>
-            <p>Express</p>
+            <p>BLOGR</p>
             <span>
-              A multi-carrier shipping website for ecommerce businesses
+              Blogr is a platform for creating an online blog or publication
             </span>
           </div>
         </div>
         <div className={styles.imageContainer}>
           <Image src={Webdesign3}></Image>
           <div className={styles.description}>
-            <p>Express</p>
+            <p>CAMP</p>
             <span>
-              A multi-carrier shipping website for ecommerce businesses
+              Get expert training in coding, data, design, and digital marketing
             </span>
           </div>
         </div>
       </div>
+      <Section02 isWeb={true} />
     </>
   );
 }
