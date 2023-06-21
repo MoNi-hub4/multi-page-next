@@ -5,7 +5,7 @@ import Logo from "/assets/shared/desktop/logo-dark.png";
 import menuBtn from "/assets/shared/mobile/icon-hamburger.svg";
 import styles from "/styles/Navbar.module.css";
 import styled from "styled-components";
-
+import Link from "next/link";
 
 
 export const Menu = styled.div`
@@ -35,7 +35,10 @@ const Navbar = (props) => {
     <>
       <div class={styles.container}>
         <div class={styles.logo}>
+          <Link href="/">
           <Image src={Logo} />
+          </Link>
+          
         </div>
 
         <Menu prop={Active} class={styles.menu}>
