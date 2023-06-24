@@ -139,6 +139,16 @@
     height: 90vh;
     grid-template-rows: 1fr 1fr;
   }
+
+  .section.newClass{
+    margin: 0px 0 20% 0;
+    height: 45vh;
+    grid-template-rows:none;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+
   .gridchild {
       font-size: 36px;
       font-weight: 500;
@@ -171,13 +181,33 @@
     grid-row-start: 1;
     grid-row-end: 3;
     margin-right: 30px;
+    
   }
+  .gridchild.webdesign.newClass {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-right: 0;
+    
+  }
+
+
   .gridchild.appdesign {
     grid-column-start: 2;
     grid-column-end: 3;
+    
+  }
+
+  .gridchild.appdesign.newClass{
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
   .gridchild.graphicdesign {
     grid-column-start: 2;
     grid-column-end: 3;
+    
   }
+
+
 }
