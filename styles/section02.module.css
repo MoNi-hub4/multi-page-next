@@ -55,11 +55,11 @@
   right: 0;
   z-index: -1;
 }
-.gridchild:hover{
-    background-image: linear-gradient(
-      rgba(231, 129, 107,0.4),
-      rgba(231, 129, 107,0.4)
-    );
+.gridchild:hover {
+  background-image: linear-gradient(
+    rgba(231, 129, 107, 0.4),
+    rgba(231, 129, 107, 0.4)
+  );
 }
 
 .appdesign {
@@ -110,6 +110,13 @@
     height: 70vh;
     padding: 50px 0 0 0;
   }
+  .section.newClass{
+    height: 70vh;
+    padding: 50px 20px 0 20px;
+  }
+
+
+
   .webdesign::before {
     background-image: linear-gradient(
         rgba(51, 49, 54, 0.4),
@@ -140,18 +147,17 @@
     grid-template-rows: 1fr 1fr;
   }
 
-  .section.newClass{
+  .section.newClass {
     margin: 0px 0 20% 0;
     height: 45vh;
-    grid-template-rows:none;
+    grid-template-rows: none;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
 
-
   .gridchild {
-      font-size: 36px;
-      font-weight: 500;
+    font-size: 36px;
+    font-weight: 500;
   }
   .webdesign::before {
     background-image: linear-gradient(
@@ -181,7 +187,6 @@
     grid-row-start: 1;
     grid-row-end: 3;
     margin-right: 30px;
-    
   }
   .gridchild.webdesign.newClass {
     grid-column-start: 1;
@@ -189,25 +194,19 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin-right: 0;
-    
   }
-
 
   .gridchild.appdesign {
     grid-column-start: 2;
     grid-column-end: 3;
-    
   }
 
-  .gridchild.appdesign.newClass{
+  .gridchild.appdesign.newClass {
     grid-column-start: 1;
     grid-column-end: 2;
   }
   .gridchild.graphicdesign {
     grid-column-start: 2;
     grid-column-end: 3;
-    
   }
-
-
 }
